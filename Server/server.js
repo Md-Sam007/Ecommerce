@@ -4,14 +4,11 @@ import cors from "cors";
 import connectDB from "./db.js";
 import { UserModel } from "./users.js";
 import { singnUpValidation ,LoginValidation} from "./validation/validation.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import  Jwt  from "jsonwebtoken";
 import {authentication} from "./authentication/auth.js";
-
 import { FileData } from "./FileData/FileData.js";
 import multer from "multer";
-
-
 import dotenv from "dotenv";
 import { ObjectId } from "mongodb";
 dotenv.config();
