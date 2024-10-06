@@ -11,7 +11,7 @@ const authentication =  (req,res,next)=>{
         
     }
     try{
-        const verification =Jwt.verify(auth,process.env.JWT_SECRETE);
+        const verification =Jwt.verify(auth,process.env.Jwt_Secrete);
         req.user=verification;
         next();
         
